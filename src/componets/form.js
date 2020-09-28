@@ -2,6 +2,13 @@ import React, { useState } from "react";
 import axios from "axios";
 import styles from "./form.module.css";
 
+/**
+ *
+ *
+ * @param   {Function}  reloadTodos  [cb function for reloading the todos]
+ *
+ * @return  {JSX}               [Component]
+ */
 const Form = ({ reloadTodos }) => {
   const [text, setText] = useState("");
   const [isSubmitting, setSubmitting] = useState(false);
